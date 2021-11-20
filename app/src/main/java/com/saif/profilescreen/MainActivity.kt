@@ -33,7 +33,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ProfileScreenTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(color = MaterialTheme.colors.background) {
+                Surface() {
                     CreateProfileScreen()
                 }
             }
@@ -56,7 +56,7 @@ fun CreateProfileScreen() {
                 .padding(24.dp),
             elevation = 24.dp,
             shape = RoundedCornerShape(corner = CornerSize(15.dp)),
-            backgroundColor = Color.White
+            backgroundColor = MaterialTheme.colors.background
 
         ) {
             Column(
